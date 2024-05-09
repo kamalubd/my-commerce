@@ -4,28 +4,28 @@ const MyHeader = () => {
     
     
     return (
-        <div className='container'>
+        <div>
             <div className="navbar bg-base-100">
   <div className="flex-1">
     <a className="btn btn-ghost text-xl">My Commerce</a>
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li>Home</li>
-      <li>Shop</li>
+      <li><a>Home</a></li>
+      <li><a>Shop</a></li>
       <li>
         <details>
           <summary>
             Products
           </summary>
           <ul className="p-2 bg-base-100 rounded-t-none">
-            <li>All Products</li>
-            <li>All Products</li>
+            <li><a>All Products</a></li>
+            <li><a>All Products</a></li>
           </ul>
         </details>
       </li>
-      <li>About Us</li>
-      <li>Contact Us</li>
+      <li><a>About Us</a></li>
+      <li><a>Contact Us</a></li>
       
     </ul>
   </div>
@@ -51,13 +51,12 @@ const MyHeader = () => {
         </div>
       </div>
     </div>
-    {/* <div class="dropdown dropdown-end">       */}
-    {/* </div> */}
-  </div>
     
   </div>
+    
+  </div> 
 
-        </div>    
+    </div>
        </div>
     );
 };
