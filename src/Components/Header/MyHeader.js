@@ -1,31 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MyHeader = () => {
     
     
     return (
-        <div>
+        <div className='container'>
             <div className="navbar bg-base-100">
   <div className="flex-1">
     <a className="btn btn-ghost text-xl">My Commerce</a>
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>Shop</a></li>
+      
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/shop">Shop</Link></li>
       <li>
         <details>
           <summary>
             Products
           </summary>
           <ul className="p-2 bg-base-100 rounded-t-none">
-            <li><a>All Products</a></li>
-            <li><a>All Products</a></li>
+            <li><Link to="/shop">All Products</Link></li>
+            <li><Link to="/shop">All Products</Link></li>
           </ul>
         </details>
       </li>
-      <li><a>About Us</a></li>
-      <li><a>Contact Us</a></li>
+      <li><Link to="/about">About Us</Link></li>
+      <li><Link to="/contact">Contact Us</Link></li>
       
     </ul>
   </div>
