@@ -5,6 +5,7 @@ import Products from '../Products/Products';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Home from '../HomePage/Home';
+import Product from "../Product/Product"
 
 
 const MyRouters = () => {
@@ -14,10 +15,14 @@ const MyRouters = () => {
           element: <Main></Main>,children: [
             {path:"/", element: <Home></Home>},
             
-            {path: "/shop", element: <Products></Products>
+            {path: "/product", element: <Product></Product>
 
             },
-            {path: "/products", element: <Products></Products>
+            {path: "/products", 
+            loader: () => {
+              return fetch ("https://fakestoreapi.com/products")
+            },
+            element: <Products></Products>
 
             },
             {path: "/about", element: <About></About>

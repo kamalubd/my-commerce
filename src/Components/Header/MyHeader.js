@@ -14,15 +14,15 @@ const MyHeader = () => {
     <ul className="menu menu-horizontal px-1">
       
       <li><Link to="/">Home</Link></li>
-      <li><Link to="/shop">Shop</Link></li>
+      <li><Link to="/collections">Shop</Link></li>
       <li>
         <details>
           <summary>
             Products
           </summary>
           <ul className="p-2 bg-base-100 rounded-t-none">
-            <li><Link to="/shop">All Products</Link></li>
-            <li><Link to="/shop">All Products</Link></li>
+            <li><Link to="/products">All Products</Link></li>
+            <li><Link to="/products">All Products</Link></li>
           </ul>
         </details>
       </li>
